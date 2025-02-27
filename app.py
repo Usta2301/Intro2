@@ -5,6 +5,6 @@ st.title("Mi Primera App!!")
 
 
 
-image = Image.open('Pasta.png')
+image = Image.open('Pasta2.png')
 
-st.image(image, caption='Pasta')
+st.image(image, caption='Pasta2')
