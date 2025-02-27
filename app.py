@@ -43,4 +43,3 @@ in_mod = st.selectbox(
   ("Audio", "Visual", "Haptico"),
 )
 if in_mod == "Audio":
-  
