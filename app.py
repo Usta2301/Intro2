@@ -34,7 +34,7 @@ with col2:
 st.subheader("Uso de Botones")
 if st.button('Presiona el botón'):
     st.write('Graciaspor presionar')
-else
+else:
   st.write('No has presionado aún')
 
 st.subheader("Selectbox")
