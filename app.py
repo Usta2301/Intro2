@@ -10,10 +10,10 @@ image = Image.open('Pasta2.png')
 st.image(image, caption='Pasta2')
 
 
-text = st.text_input('Escribe algo','Este es mi texto')
+texto = st.text_input('Escribe algo','Este es mi texto')
 st.write('El texto escrito es', texto)
 
-st.subheader("Ahora useamos 2 Columnas")
+st.subheader("Ahora usemos 2 Columnas")
 col1, col2 = st.columns(2)
 with col1:
   st.subheader("Esta es la primera columna")
@@ -21,21 +21,21 @@ with col1:
   resp = st.checkbox('Estoy de acuerdo')
   if resp:
     st.write('Correcto!')
-    
 with col2:
-  modo = st.radio("Que Modadlidad es la principal en tu interfaz", ('Visual','auditiva', 'Tactil'))    
+  st.subheader("Esta es la segunda columna")
+  modo = st.radio("Que Modadlidad es la principal en tu interfaz", ('Visual','auditiva', 'Táctil'))    
   if modo == 'Visual':
     st.write('La vista es fundamental para tu interfaz')
   if modo == 'auditiva':
-    st.write('La audicion es fundamental para tu interfaz')
-  if modo == 'Tactil':
+    st.write('La audición es fundamental para tu interfaz')
+  if modo == 'Táctil':
     st.write('El tacto es fundamental para tu interfaz')
 
 st.subheader("Uso de Botones")
 if st.button('Presiona el botón'):
-    st.write('Graciaspor presionar')
+    st.write('Gracias por presionar')
 else:
-  st.write('No has presionado aún')
+    st.write('No has presionado aún')
 
 st.subheader("Selectbox")
 in_mod = st.selectbox(
@@ -43,12 +43,12 @@ in_mod = st.selectbox(
   ("Audio", "Visual", "Háptico"),
 )
 if in_mod == "Audio":
-  set_mod = "Reproducir audio"
+    set_mod = "Reproducir audio"
 elif in_mod == "Visual":
-  set_mod = "Reproducir video"
+    set_mod = "Reproducir video"
 elif in_mod == "Háptico":
-  set_mod = "Activar vibración"
-st.write("La acción es:", set_mod)
+    set_mod = "Activar vibración"
+st.write(" La acción es:", set_mod)
 
 
 with st.sidebar:
